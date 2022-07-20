@@ -1,0 +1,42 @@
+/* Nav Bar */
+.navbar {
+    background: transparent;
+    height: 80px;
+    top: 0;
+  }
+  .navbar-bg {
+    background-color: #555B6E;
+    opacity: 80%;
+  }
+  .brand, .list_item, .btn {
+    padding: 0px 10px;
+    color: #FAF9F9 !important;
+  }
+  .brand span {
+    margin-left: 5px;
+  }
+  .list_item:hover, .btn:hover {
+    background-color: rgba(190, 227, 219, 0.3) !important;
+    border-radius: 20px;
+  }
+ 
+  .list_item:focus{
+    border-bottom: 2px solid #89B0AE;
+    border-radius: 10px;
+    color: #89B0AE !important;
+    padding-bottom: 2px;
+  }
+  .btn {
+    background-color: #555B6E !important;
+    border: #FAF9F9 solid !important;
+    border-radius: 20px !important;
+  }
+  
+  .btn:active, .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn:hover {
+    border: #BEE3DB solid !important;
+  }
