@@ -1,11 +1,11 @@
 /* Nav Bar */
 .navbar {
-    background: transparent;
+    background: #313850;
     height: 80px;
     top: 0;
   }
   .navbar-bg {
-    background-color: #555B6E;
+    background-color: #313850;
     opacity: 80%;
   }
   .brand, .list_item, .btn {

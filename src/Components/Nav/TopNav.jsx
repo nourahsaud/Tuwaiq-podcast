@@ -8,8 +8,8 @@ import './Nav.css';
 const TopNav = () => {
     const menuData = [
         {
-            path:'/Home',
-            name:'Home'
+            path:'/',
+            name:'Home',
         },
         {
             path:'/About',
@@ -18,10 +18,6 @@ const TopNav = () => {
         {
             path:'/Programs',
             name:'Programs'
-        },
-        {
-            path:'/Team',
-            name:'Team'
         },
         {
             path:'/Contact',
@@ -43,19 +39,19 @@ const TopNav = () => {
     const navigate = useNavigate();
 
     const navToSubscribe = () => {
-        navigate('/Subscribe');
+        navigate('Subscribe');
     }
 
     return (
-        <Navbar className={color ? 'navbar-bg sticky-top' : 'navbar'} expand="lg">
+        <Navbar className={color ? 'navbar-bg' : 'navbar'} expand="lg">
             <Container>
             
-                <Navbar.Brand href="#home" className="brand"> <FaHeadphonesAlt /> <span>POD</span> Tuwaiq</Navbar.Brand>
+                <Navbar.Brand href="/" className="brand"> <FaHeadphonesAlt /> <span>POD</span> Tuwaiq</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         {
-                            menuData.map(item => (
+                            menuData.map(item=> (
                                 <LinkContainer to={item.path} key={item.name}>
                                     <Nav.Link className="list_item">{item.name}</Nav.Link>
                                 </LinkContainer>
